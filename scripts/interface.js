@@ -16,11 +16,11 @@ function handleClick(event) {
             playerTime == 0
                 ? alert("O jogo Acabou - O vencedor foi o Escudeiro!")
                 : alert("O jogo Acabou - O vencedor foi o Espadachim!")
-
         }, 10)
 
     };
     updateSquares(position);
+    whoPlays();
 }
 
 function updateSquares(position) {
@@ -40,3 +40,13 @@ function restartGame() {
     })
 
 }
+
+function whoPlays() {
+    let who = document.getElementById("whoPlays")
+    playerTime == 0
+        ? who.innerHTML = "<h1>Vez do Escudeiro</h1>"
+        : who.innerHTML = "<h1>Vez do Espadachim</h1>"
+}
+whoPlays();
+
+document.getElementById("1").style.backgroundColor
