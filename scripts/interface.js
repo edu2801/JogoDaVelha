@@ -29,24 +29,21 @@ function updateSquares(position) {
     square.innerHTML = `<div class='${symbol}'></div>`
 }
 
+function whoPlays() {
+    playerTime == 0
+        ? who.innerHTML = "<h1>Vez do Escudeiro</h1>"
+        : who.innerHTML = "<h1>Vez do Espadachim</h1>"
+}
+
 function restartGame() {
     let squares = document.querySelectorAll(".square");
     board = ["", "", "", "", "", "", "", "", ""];
     playerTime = 0;
     gameOver = false;
+    who.innerHTML = "<h1>Vez do Escudeiro</h1>"
 
     squares.forEach((square) => {
         square.innerHTML = '';
     })
 
 }
-
-function whoPlays() {
-    let who = document.getElementById("whoPlays")
-    playerTime == 0
-        ? who.innerHTML = "<h1>Vez do Escudeiro</h1>"
-        : who.innerHTML = "<h1>Vez do Espadachim</h1>"
-}
-whoPlays();
-
-document.getElementById("1").style.backgroundColor

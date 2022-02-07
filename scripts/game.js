@@ -1,6 +1,7 @@
 let board = ["", "", "", "", "", "", "", "", ""];
 let playerTime = 0;
 let gameOver = false;
+let who = document.getElementById("whoPlays")
 let symbol = ["O", "X"];
 let winStates = [
     [0, 1, 2],
