@@ -1,3 +1,5 @@
+let who = document.getElementById("whoPlays")
+
 document.addEventListener("DOMContentLoaded", () => {
     let squares = document.querySelectorAll(".square");
 
