@@ -16,7 +16,7 @@ function handleClick(event) {
             playerTime == 0
                 ? alert("O jogo Acabou - O vencedor foi o Escudeiro!")
                 : alert("O jogo Acabou - O vencedor foi o Espadachim!")
-        }, 10)
+        }, 20)
 
     };
     updateSquares(position);
