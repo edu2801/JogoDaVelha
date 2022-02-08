@@ -17,6 +17,7 @@ h1 {
 .square:hover{
   padding: 2px;
   cursor:pointer;
+  transition: padding 0.4s;
 }
 
 .O {

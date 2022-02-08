@@ -16,13 +16,14 @@ function handleClick(event) {
 
         setTimeout(() => {
             playerTime == 0
-                ? alert("O jogo Acabou - O vencedor foi o Escudeiro!")
-                : alert("O jogo Acabou - O vencedor foi o Espadachim!")
+                ? (who.innerHTML = "<h1 style = 'color: green;'>O vencedor foi o Escudeiro!</h1>"/*, alert("O jogo Acabou - O vencedor foi o Escudeiro!")*/)
+                : (who.innerHTML = "<h1 style = 'color: green;'>O vencedor foi o Espadachim!</h1>"/*, alert("O jogo Acabou - O vencedor foi o Espadachim!")*/)
         }, 20)
-
     };
+    if (!gameOver) {
+        whoPlays()
+    }
     updateSquares(position);
-    whoPlays();
 }
 
 function updateSquares(position) {
